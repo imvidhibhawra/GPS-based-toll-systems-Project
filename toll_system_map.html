@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_312b035858fe74b454e23d87011d25ec {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_312b035858fe74b454e23d87011d25ec" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_312b035858fe74b454e23d87011d25ec = L.map(
+                "map_312b035858fe74b454e23d87011d25ec",
+                {
+                    center: [12.9716, 77.5946],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_008fe4fee79a457a7372fd19952b47c9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_008fe4fee79a457a7372fd19952b47c9.addTo(map_312b035858fe74b454e23d87011d25ec);
+        
+    
+            var marker_0e1ef3d976199f5034b29f2c67765b76 = L.marker(
+                [77.5946, 12.9716],
+                {}
+            ).addTo(map_312b035858fe74b454e23d87011d25ec);
+        
+    
+        var popup_65f8df1e431c1364f473ef165fa1cc02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_324bd02ea5302608f4ff837cf85ae9e2 = $(`<div id="html_324bd02ea5302608f4ff837cf85ae9e2" style="width: 100.0%; height: 100.0%;">Toll Zone</div>`)[0];
+                popup_65f8df1e431c1364f473ef165fa1cc02.setContent(html_324bd02ea5302608f4ff837cf85ae9e2);
+            
+        
+
+        marker_0e1ef3d976199f5034b29f2c67765b76.bindPopup(popup_65f8df1e431c1364f473ef165fa1cc02)
+        ;
+
+        
+    
+    
+            var marker_21ef8f0e9728d011fd2fcb0992f6e15a = L.marker(
+                [80.2707, 13.0827],
+                {}
+            ).addTo(map_312b035858fe74b454e23d87011d25ec);
+        
+    
+        var popup_cf22eec5dcebad87d4c6264172259b0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60f197af82e5b0953da3028906acb622 = $(`<div id="html_60f197af82e5b0953da3028906acb622" style="width: 100.0%; height: 100.0%;">Toll Zone</div>`)[0];
+                popup_cf22eec5dcebad87d4c6264172259b0f.setContent(html_60f197af82e5b0953da3028906acb622);
+            
+        
+
+        marker_21ef8f0e9728d011fd2fcb0992f6e15a.bindPopup(popup_cf22eec5dcebad87d4c6264172259b0f)
+        ;
+
+        
+    
+</script>
+</html>
